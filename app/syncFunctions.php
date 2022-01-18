@@ -2,13 +2,9 @@
 
 
 function updateData($jsonData, $file){
-    
     $url = "https://manzilmedia.net/apps/rendezvous/zone/ZoneA/sync.php";
     $api = "06b53047cf294f7207789ff5293ad2dc";
-    
-    
     $data = array('api' =>$api, 'data' => $jsonData, 'file'=>$file);
-    
     $options = array(
         'http' => array(
             'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
